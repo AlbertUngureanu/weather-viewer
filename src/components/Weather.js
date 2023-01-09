@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { createClient } from 'pexels';
 
-const client = createClient('563492ad6f9170000100000124732c9185d84f6cbaf98471b4b18663');
+const client = createClient('APIkey');
 const DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const currentDay = new Date();
 
