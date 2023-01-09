@@ -14,7 +14,7 @@ export default function Searchbar(props) {
         url: 'https://wft-geo-db.p.rapidapi.com/v1/geo/cities',
         params: {limit: '5', namePrefix: `${value}`, sort: '-population', types: 'CITY'},
         headers: {
-          'X-RapidAPI-Key': '1f460494f1mshc936c9757e6346ep1f8fb0jsn266187969983',
+          'X-RapidAPI-Key': '',
           'X-RapidAPI-Host': 'wft-geo-db.p.rapidapi.com'
         }
       };
