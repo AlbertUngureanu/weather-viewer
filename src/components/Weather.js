@@ -17,7 +17,7 @@ export default function Weather(props) {
     const [isFav, setIsFav] = useState(false);
 
     const weatherData = () => {
-        return axios.request(`http://api.weatherapi.com/v1/forecast.json?key=18c224b14e0f4cbe92a205451223012&q=${latitude},${longitude}&days=5&aqi=no`).then(response => {
+        return axios.request(`http://api.weatherapi.com/v1/forecast.json?key=APIkey&q=${latitude},${longitude}&days=5&aqi=no`).then(response => {
             return response.data;
         });        
     }
