@@ -1,0 +1,238 @@
+body{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url('https://img.freepik.com/free-vector/3d-earth-graphic-symbolizing-global-trade-illustration_456031-131.jpg?w=1480&t=st=1673031717~exp=1673032317~hmac=0946bb5a5dc10a4cccde541cef1ce823555b401fb84f7619d96fbd2bd931a81e');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#root{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.informations{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 90%;
+}
+
+.search_bar{
+    margin-top: 3vh;
+}
+
+.forecast{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 10vmin;
+
+    width: 90%;
+    height: 30%;
+}
+
+.forecast .relevantInfo{
+    width: 60%;
+    height: 100%;
+}
+
+.forecast .icon{
+    width: 40%;
+    height: 100%;
+
+
+}
+
+.forecast .relevantInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.forecastInfo{
+    margin: 0 0.5vw;
+    height: 70%;
+    width: 25%;
+}
+
+.forecastInfo .otherInfo{
+    font-size: 2vmin;
+}
+
+.forecastInfo .otherInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    height: 80%;
+    margin-left: 0.5vw;
+}
+
+.forecastInfo .otherInfo span{
+    margin: 0.5vh 0;
+}
+
+.forecastInfo .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+.forecastInfo .relevantInfo, .forecastInfo .icon{
+    margin: 0.5vh 0.5vw 0 0;
+}
+
+.forecastInfo{
+    box-shadow: -0.1vw 0.5vw 1vw 0.1vw rgb(2, 156, 167);
+}
+
+.currentInfo, .forecastInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    background-color: rgb(2, 156, 167);
+    border-radius: 2rem;
+}
+
+.current{
+    margin-top: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+
+    height: 40%;
+}
+
+.currentInfo{
+    width: 50%;
+    margin-right: 0.5vw;
+}
+
+.currentInfo .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+    font-size: 1.5vw;
+}
+
+.currentInfo .otherInfo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 4vh;
+
+    margin-left: 2vw;
+}
+
+.currentInfo .relevantInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2vh;
+    margin-right: 2vw;
+    width: 60%;
+    height: 100%;
+}
+
+.currentInfo .otherInfo :not(.temperature){
+    font-size: 5vmin;
+}
+
+.current > img{
+    width: 50%;
+    border-radius: 2rem;
+}
+
+.currentInfo .icon img{
+    height: 70%;
+}
+
+.cityName, .date, .temperature{
+    font-weight: bold;
+}
+
+.date{
+    font-size: 2vmin;
+    align-self: center;
+
+    height: 20%;
+}
+
+.temperature{
+    font-size: 10vmin;
+}
+
+.cityName{
+    font-size: 5vmin;
+    margin-left: 1vw;
+}
+
+input{
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+
+
+#spinner:not([hidden]) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin-top: 10vh;
+  }
+  
+#spinner::after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    border: 2px solid #f3f3f3;
+    border-top: 3px solid #f25a41;
+    border-radius: 100%;
+    will-change: transform;
+    animation: spin 1s infinite linear
+}
+
+@keyframes spin {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
