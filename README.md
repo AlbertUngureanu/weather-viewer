@@ -7,3 +7,5 @@ Developed an application in React which can show the weather and the forecast fo
 • Collected weather information using weatherAPI.
 
 • Mapped data using JavaScript objects.
+
+• Used local storage to store a list with favorites cities.
